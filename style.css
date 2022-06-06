@@ -39,7 +39,6 @@ header button{
     font-size: 1.3rem!important;
 }
 
-
 button a {
     color: white;
     text-decoration: none;
@@ -58,3 +57,132 @@ button a:hover {
 /* #edit{
     display: none;
 } */
+
+#month{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.3rem;
+}
+
+/* #edit{
+    display: none;
+} */
+
+#back{
+    background-color:darkblue;
+    text-decoration: none;
+    padding:9px;
+    color:white;
+    border-radius: 50%;
+    text-align: center;
+    justify-content: center;
+    font-size: 0.6rem;
+    box-shadow: 8px 5px 10px 3px #7eac85;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    animation: glowing 1500ms infinite;
+    transition: transform .5s ease;
+}
+  
+  @keyframes glowing {
+    0% {
+      background-color: #3b0aad;
+      box-shadow: 0 0 5px #eec5f0;
+    }
+    50% {
+      background-color: #0c090a;
+      box-shadow: 0 0 20px #857d81;
+    }
+    100% {
+      background-color: #500c9e;
+      box-shadow: 0 0 5px #d78eee;
+    }
+  }
+ 
+#back:hover{
+    transform: scale(1.2);
+
+}
+
+.g-5, .gy-5 {
+    --bs-gutter-y: 1.5rem;
+}
+
+h1.card-title {
+    font-size: 1.25rem;
+}
+
+.card-body > h2 {
+    font-size: 2.5rem;
+    color:orangered;
+    margin-bottom: 0px;
+}
+
+.card-body > span {
+    font-size: 1.75rem;
+    color:orangered;
+}
+
+.btn-done{
+    background-color:rgb(28, 240, 28);
+    border: none;
+    color: black;
+    font-weight:600;
+    box-shadow: 4px 2px 35px 1px #7eac85;
+    font-size: 0.6rem !important;
+}
+
+.btn-del:hover{
+    background-color: #ad380d;
+    box-shadow: 4px 2px 25px 1px #7eac85;
+}
+
+.btn-edit:hover{
+    background-color: #0d18ad;
+    box-shadow: 4px 2px 25px 1px #7eac85;
+}
+
+#add-task{
+    font-size: 1rem;
+    width: 60px!important;
+    text-align: center;
+    padding:3px;
+}
+
+#add-task:hover{
+    background-color: #0d18ad !important;
+    box-shadow: 4px 2px 25px 1px #7eac85 !important;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* media query */
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 570px;
+    }
+    
+}
+
+@media (max-width:767px) {
+    form textarea {
+        margin-bottom: 1.5em;
+    }
+
+    #addTask{
+        font-size: 0.7rem;
+        width: 40px!important;
+        text-align: center;
+        padding:3px;
+    }
+
+}
+
+@media (min-width: 769px) and (max-width: 1199px) {
+    #assigned-to, #statusLayout{
+        font-size: 0.65rem;
+    }
+}
