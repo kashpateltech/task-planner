@@ -15,60 +15,219 @@
   </head>
   <body>
     <!-- start of tasks layout -->
-    <div class="container" id="top"></div>
-    <header class="row text-center p-3 mt-5">
-      <button
-        type="button"
-        class="btn btn-outline-info position-absolute top-30 start-10 shadow rounded text-center w-25"
-        id="add-task"
-      >
-        Add Task
-      </button>
-
-      <h1 class="text-dark mt-5 pt-5 pb-3">TASK PLANNER</h1>
-      <br />
-      <hr />
-    </header>
-    <!-- end of header -->
-    <section class="row" id="card-layout">
-      <!-- Start of Card 1 -->
-      <div class="col-12 col-md-6 col-lg-4 gy-5">
-        <div class="card">
-          <div class="card-body">
-            <div class="row">
-              <div class="col-9">
-                <h1 class="card-title">Task Name</h1>
+    <div class="container" id="top">
+        <header class="row text-center p-3 mt-5">
+        <button type="button" class="btn btn-outline-info position-absolute top-30 start-10 shadow rounded text-center" data-bs-toggle="modal" data-bs-target="#pop-up-form" id="add-task">Add Task</button>
+        <h1 class="text-dark mt-5 pt-5 pb-3">TASK PLANNER</h1>
+        <br />
+        <hr />
+        </header>
+        <!-- end of header -->
+        <section class="row" id="card-layout">
+        <!-- Start of Card 1 -->
+        <div class="col-12 col-md-6 col-lg-4 gy-5">
+            <div class="card">
+            <div class="card-body">
+                <div class="row">
+                <div class="col-9">
+                    <h1 class="card-title">Task Name</h1>
+                    <hr />
+                    <p class="card-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem id totam culpa officia quia.
+                    </p>
+                </div>
+                <div class="col-3">
+                    <h2 class="float-right">7</h2>
+                    <span>June</span>
+                </div>
+                </div>
                 <hr />
-                <p class="card-text">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Quidem id totam culpa officia quia.
-                </p>
-              </div>
-              <div class="col-3">
-                <h2 class="float-right">22</h2>
-                <span>Sep</span>
-              </div>
+                <div class="row last-row gx-2">
+                <div class="col-3">
+                    <p id="assigned-to">Assigned to <br />Name</p>
+                </div>
+                <div class="col-3 statusColor">
+                    <p>Status<br/>Done</p>
+                </div>
+                <div class="col-3">
+                    <a href="#" class="btn btn-primary btn-sm" id="edit">Edit</a>
+                </div>
+                <div class="col-3">
+                    <a href="#" class="btn btn-secondary btn-sm" id="delete">Delete</a>
+                </div>
+                </div>
             </div>
-            <hr />
-            <div class="row last-row gx-2">
-              <div class="col-3">
-                <p id="assigned-to">Assigned to <br />Name</p>
-              </div>
-              <div class="col-3 statusColor">
-                  <p>Status<br/>Done</p>
-              </div>
-              <div class="col-3">
-                  <a href="#" class="btn btn-primary btn-sm" id="edit">Edit</a>
-              </div>
-              <div class="col-3">
-                  <a href="#" class="btn btn-secondary btn-sm" id="delete">Delete</a>
-              </div>
             </div>
-          </div>
+            <!-- End of Card -->
         </div>
-        <!-- End of Card -->
-      </div>
-      <!-- End of Card 1 -->
-    </section>
+        <!-- End of Card 1 -->
+
+        <!-- start of card 2 -->
+        <div class="col-12 col-md-6 col-lg-4 gy-5">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-9">
+                            <h1 class="card-title">Task Name</h1>
+                            <hr />
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem id totam culpa officia quia.</p>
+                        </div>
+                        <div class="col-3">
+                            <h2 class="float-right">8</h2>
+                            <span>June</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row last-row gx-1">
+                        <div class="col-3">
+                            <p id="assigned-to">Assigned to<be />Name</p>
+                        </div>
+                        <div class="col-3">
+                            <a href="#" class="btn btn-primary btn-sm" id="edit">Edit</a>
+                        </div>
+                        <div class="col-3">
+                            <a href="#" class="btn-secondary btn-sm" id="delete">Delete</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of card -->
+        </div>
+        <!-- End of card 2 -->
+
+        <!-- start of card 3 -->
+        <div class="col-12 col-md-6 col-lg-4 gy-5">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-9">
+                            <h1 class="card-title">Task Name</h1>
+                            <hr />
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem id totam culpa officia quia.</p>
+                        </div>
+                        <div class="col-3">
+                            <h2 class="float-right">8</h2>
+                            <span>June</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row last-row gx-1">
+                        <div class="col-3">
+                            <p id="assigned-to">Assigned to<be />Name</p>
+                        </div>
+                        <div class="col-3">
+                            <a href="#" class="btn btn-primary btn-sm" id="edit">Edit</a>
+                        </div>
+                        <div class="col-3">
+                            <a href="#" class="btn-secondary btn-sm" id="delete">Delete</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of card -->
+        </div>
+        <!-- End of card 3 -->
+
+        <!-- start of card 4 -->
+        <div class="col-12 col-md-6 col-lg-4 gy-5">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-9">
+                            <h1 class="card-title">Task Name</h1>
+                            <hr />
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem id totam culpa officia quia.</p>
+                        </div>
+                        <div class="col-3">
+                            <h2 class="float-right">8</h2>
+                            <span>June</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row last-row gx-1">
+                        <div class="col-3">
+                            <p id="assigned-to">Assigned to<be />Name</p>
+                        </div>
+                        <div class="col-3">
+                            <a href="#" class="btn btn-primary btn-sm" id="edit">Edit</a>
+                        </div>
+                        <div class="col-3">
+                            <a href="#" class="btn-secondary btn-sm" id="delete">Delete</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of card -->
+        </div>
+        <!-- End of card 4 -->
+
+        <!-- start of card 5 -->
+        <div class="col-12 col-md-6 col-lg-4 gy-5">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-9">
+                            <h1 class="card-title">Task Name</h1>
+                            <hr />
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem id totam culpa officia quia.</p>
+                        </div>
+                        <div class="col-3">
+                            <h2 class="float-right">8</h2>
+                            <span>June</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row last-row gx-1">
+                        <div class="col-3">
+                            <p id="assigned-to">Assigned to<be />Name</p>
+                        </div>
+                        <div class="col-3">
+                            <a href="#" class="btn btn-primary btn-sm" id="edit">Edit</a>
+                        </div>
+                        <div class="col-3">
+                            <a href="#" class="btn-secondary btn-sm" id="delete">Delete</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of card -->
+        </div>
+        <!-- End of card 5 -->
+
+        <!-- start of card 6 -->
+        <div class="col-12 col-md-6 col-lg-4 gy-5">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-9">
+                            <h1 class="card-title">Task Name</h1>
+                            <hr />
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem id totam culpa officia quia.</p>
+                        </div>
+                        <div class="col-3">
+                            <h2 class="float-right">8</h2>
+                            <span>June</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row last-row gx-1">
+                        <div class="col-3">
+                            <p id="assigned-to">Assigned to<be />Name</p>
+                        </div>
+                        <div class="col-3">
+                            <a href="#" class="btn btn-primary btn-sm" id="edit">Edit</a>
+                        </div>
+                        <div class="col-3">
+                            <a href="#" class="btn-secondary btn-sm" id="delete">Delete</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of card -->
+        </div>
+        <!-- End of card 6 -->
+
+        </section>
+    </div>
   </body>
 </html>

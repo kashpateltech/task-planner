@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@300&family=Nunito+Sans:wght@200&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-position: center;
+}
+
+header h1{
+    font-family: 'Exo', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 4px!important;
+}
+
+header hr{
+    height: 2px!important;
+    color: white;
+}
+
+modal-content {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.75);  
+}
+
+.container {
+    padding-top: 1em;
+    padding-bottom: 3em;
+}
+
+header button{
+    min-width: 130px!important;
+    min-height: 50px;
+    font-size: 1.3rem!important;
+}
+
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+button a:hover {
+    color: white;
+}
+
+.last-row p{
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: rgb(2, 2, 36);
+}
+
+/* #edit{
+    display: none;
+} */
