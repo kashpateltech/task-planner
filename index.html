@@ -1,15 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
-    <title>Task Planner</title>
-</head>
-<body>
-    <!-- Navbar -->
-    <h1>Welcome to Task Planner</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Task Planner - Mei Gunjan and Kash</title>
+  </head>
+  <body>
+    <!-- start of tasks layout -->
+    <div class="container" id="top"></div>
+    <header class="row text-center p-3 mt-5">
+      <button
+        type="button"
+        class="btn btn-outline-info position-absolute top-30 start-10 shadow rounded text-center w-25"
+        id="add-task"
+      >
+        Add Task
+      </button>
+
+      <h1 class="text-dark mt-5 pt-5 pb-3">TASK PLANNER</h1>
+      <br />
+      <hr />
+    </header>
+    <!-- end of header -->
+    <section class="row" id="card-layout">
+      <!-- Start of Card 1 -->
+      <div class="col-12 col-md-6 col-lg-4 gy-5">
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-9">
+                <h1 class="card-title">Task Name</h1>
+                <hr />
+                <p class="card-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Quidem id totam culpa officia quia.
+                </p>
+              </div>
+              <div class="col-3">
+                <h2 class="float-right">22</h2>
+                <span>Sep</span>
+              </div>
+            </div>
+            <hr />
+            <div class="row last-row gx-2">
+              <div class="col-3">
+                <p id="assigned-to">Assigned to <br />Name</p>
+              </div>
+              <div class="col-3 statusColor">
+                  <p>Status<br/>Done</p>
+              </div>
+              <div class="col-3">
+                  <a href="#" class="btn btn-primary btn-sm" id="edit">Edit</a>
+              </div>
+              <div class="col-3">
+                  <a href="#" class="btn btn-secondary btn-sm" id="delete">Delete</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of Card -->
+      </div>
+      <!-- End of Card 1 -->
+    </section>
+  </body>
 </html>
