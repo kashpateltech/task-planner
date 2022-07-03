@@ -11,6 +11,8 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./style.css" />
+    <script src="./js/taskManager.js" defer></script>
+    <script src="./js/index.js" defer></script>
     <title>Task Planner - Mei Gunjan and Kash</title>
   </head>
   <body>
@@ -32,9 +34,9 @@
         <hr />
       </header>
       <!-- end of header -->
-      <section class="row" id="card-layout">
+      <section class="row" id="cardLayout">
         <!-- Start of Card 1 -->
-        <div class="col-12 col-md-6 col-lg-4 gy-5">
+        <!-- <div class="col-12 col-md-6 col-lg-4 gy-5">
           <div class="card">
             <div class="card-body">
               <div class="row">
@@ -69,11 +71,11 @@
             </div>
           </div>
           <!-- End of Card -->
-        </div>
+        <!-- </div> -->
         <!-- End of Card 1 -->
 
         <!-- start of card 2 -->
-        <div class="col-12 col-md-6 col-lg-4 gy-5">
+        <!-- <div class="col-12 col-md-6 col-lg-4 gy-5">
           <div class="card">
             <div class="card-body">
               <div class="row">
@@ -108,11 +110,11 @@
             </div>
           </div>
           <!-- end of card -->
-        </div>
+        <!-- </div> --> -->
         <!-- End of card 2 -->
 
         <!-- start of card 3 -->
-        <div class="col-12 col-md-6 col-lg-4 gy-5">
+        <!-- <div class="col-12 col-md-6 col-lg-4 gy-5">
           <div class="card">
             <div class="card-body">
               <div class="row">
@@ -149,11 +151,11 @@
             </div>
           </div>
           <!-- end of card -->
-        </div>
+        <!-- </div> -->
         <!-- End of card 3 -->
 
         <!-- start of card 4 -->
-        <div class="col-12 col-md-6 col-lg-4 gy-5">
+        <!-- <div class="col-12 col-md-6 col-lg-4 gy-5">
           <div class="card">
             <div class="card-body">
               <div class="row">
@@ -188,13 +190,13 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
           <!-- end of card -->
-        </div>
+        <!-- </div> --> -->
         <!-- End of card 4 -->
 
         <!-- start of card 5 -->
-        <div class="col-12 col-md-6 col-lg-4 gy-5">
+        <!-- <div class="col-12 col-md-6 col-lg-4 gy-5">
           <div class="card">
             <div class="card-body">
               <div class="row">
@@ -229,13 +231,13 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
           <!-- end of card -->
-        </div>
+        <!-- </div> -->
         <!-- End of card 5 -->
 
         <!-- start of card 6 -->
-        <div class="col-12 col-md-6 col-lg-4 gy-5">
+        <!-- <div class="col-12 col-md-6 col-lg-4 gy-5">
           <div class="card">
             <div class="card-body">
               <div class="row">
@@ -268,9 +270,9 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
           <!-- end of card -->
-        </div>
+        <!-- </div> --> -->
         <!-- End of card 6 -->
       </section>
     </div>
@@ -280,25 +282,12 @@
 
     <!-- Bootstrap pop-up modal  -->
 
-    <div
-      class="modal fade"
-      data-bs-backdrop="static"
-      data-bs-keyboard="false"
-      id="pop-up-form"
-      tabindex="-1"
-      aria-labelledby="pop-up-form-label"
-      aria-hidden="true"
-    >
+    <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="pop-up-form" tabindex="-1" aria-labelledby="pop-up-form-label" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="pop-up-form-label">Task Form</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <form action="">
